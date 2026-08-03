@@ -231,15 +231,20 @@ h2{
 
 .gallery div{
 
+    width:100%;
+    max-width:120px;
     aspect-ratio:1;
+
+    margin:auto;
 
     border-radius:15px;
 
     background:
-
     linear-gradient(135deg,#a855f7,#ec4899);
 
     opacity:.6;
+
+}
 
 }
 
