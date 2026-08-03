@@ -1,0 +1,255 @@
+*{
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+body{
+    margin:0;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+}
+
+
+.background{
+
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top,#8b5cf6,#111827 50%),
+    linear-gradient(120deg,#020617,#111827);
+
+    z-index:-1;
+}
+
+
+
+.profile{
+
+    width:420px;
+    padding:40px 20px;
+    text-align:center;
+
+}
+
+
+
+.avatar img{
+
+    width:130px;
+    height:130px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:4px solid white;
+
+    box-shadow:0 0 30px #a855f7;
+
+}
+
+
+
+h1{
+
+    margin-bottom:5px;
+    font-size:35px;
+
+}
+
+
+h2{
+
+    margin-top:0;
+    color:#c4b5fd;
+
+}
+
+
+
+.bio{
+
+    line-height:1.6;
+
+    opacity:.9;
+
+}
+
+
+
+.instagram{
+
+    margin:30px 0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+
+}
+
+
+
+.instagram img{
+
+    width:55px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.instagram img:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+.instagram strong{
+
+    font-size:20px;
+
+}
+
+
+
+.instagram p{
+
+    margin:3px;
+    color:#ddd;
+
+}
+
+
+
+.stats{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    background:#ffffff15;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+.stats div{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.stats b{
+
+    font-size:24px;
+
+}
+
+
+
+.cards{
+
+    margin-top:30px;
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+
+
+.card{
+
+    background:#ffffff12;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(12px);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:#ffffff25;
+
+}
+
+
+
+.card h3{
+
+    margin:10px;
+
+}
+
+
+
+.gallery-title{
+
+    margin-top:40px;
+
+}
+
+
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+
+}
+
+
+
+.gallery div{
+
+    aspect-ratio:1;
+
+    border-radius:15px;
+
+    background:
+
+    linear-gradient(135deg,#a855f7,#ec4899);
+
+    opacity:.6;
+
+}
+
+
+@media(max-width:500px){
+
+.profile{
+
+    width:100%;
+
+}
+
+}
