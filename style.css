@@ -242,7 +242,7 @@ h2{
 }
 
 .gallery img{
-    height:60px;
+    height:100px;
 }
 
 }
@@ -251,11 +251,11 @@ h2{
 }
 
 
-@media(max-width:225px){
+@media(max-width:500px){
 
 .profile{
 
-    width:80px;
+    width:100px;
 
 }
 
