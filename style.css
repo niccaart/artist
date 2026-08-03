@@ -229,21 +229,23 @@ h2{
 
 
 
-.gallery div{
-
+.gallery img{
     width:100%;
-    max-width:120px;
-    aspect-ratio:1;
-
-    margin:auto;
-
+    height:120px;
+    object-fit:cover;
     border-radius:15px;
+}
+@media(max-width:500px){
 
-    background:
-    linear-gradient(135deg,#a855f7,#ec4899);
+.gallery{
+    grid-template-columns:repeat(3, 1fr);
+}
 
-    opacity:.6;
+.gallery img{
+    height:90px;
+}
 
+}
 }
 
 }
